@@ -22,6 +22,14 @@ Route::get('/home', function () {
 Route::get('/admin', function () {
     return view('admin');
 });
-
+Route::get('/products', function () {
+    return view('products');
+});
+Route::get('/providers', function () {
+    return view('providers');
+});
+Route::get('/sales', function () {
+    return view('sales');
+});
 
 require __DIR__.'/auth.php';
